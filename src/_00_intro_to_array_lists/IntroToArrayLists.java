@@ -15,21 +15,12 @@ public class IntroToArrayLists {
 		stringArrayList.add("Kate");
 		stringArrayList.add("Sally");
 		//3. Print all the Strings using a standard for-loop
-		for (int i = 0; i < stringArrayList.size(); i++) {
-			System.out.println(stringArrayList.get(i));
-		}
-		//4. Print all the Strings using a for-each loop
-		for (String word: stringArrayList) {
-			System.out.println(word);
-		}
-		//5. Print only the even numbered elements in the list.
-		for (int i = 0; i < stringArrayList.size(); i+=2) {
-			System.out.println(stringArrayList.get(i));
-		}
-		//6. Print all the Strings in reverse order.
-		for (int i = stringArrayList.size() - 1; i >= 0; i--) {
-			
-		}
+		
 		//7. Print only the Strings that have the letter 'e' in them.
+		for (int i = 0; i < stringArrayList.size(); i++) {
+			if (stringArrayList.get(i).contains("e")) {
+				System.out.println(stringArrayList.get(i));
+			}
+		}
 	}
 }
